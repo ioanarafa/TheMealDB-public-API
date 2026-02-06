@@ -1,0 +1,127 @@
+body {
+  font-family: Arial;
+  text-align: center;
+  background-color: #fafafa;
+}
+
+#search-area {
+  margin-top: 150px;
+}
+
+input {
+  padding: 5px;
+}
+
+button {
+  padding: 6px 12px;
+  background-color: lightblue;
+  border: 1px solid #555;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: deepskyblue;
+}
+
+#loader {
+  margin: 20px auto;
+  border: 6px solid #ddd;
+  border-top: 6px solid #1d3557;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  display: none;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+#results {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  width: 80%;
+  margin: 20px auto;
+}
+
+.meal {
+  border: 1px solid #ccc;
+  padding: 5px;
+  background: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.meal img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+#details {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.5);
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+#details .card {
+  background: white;
+  width: 500px;
+  height: 400px;
+  padding: 10px;
+  border-radius: 10px;
+  overflow-y: auto;
+  color: red;
+}
+
+#cartIcon {
+  position: fixed;
+  top: 10px;
+  right: 20px;
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+}
+
+#cart {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.5);
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+#cart .card {
+  background: white;
+  width: 350px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.cartIconFA {
+  position: fixed;
+  top: 10px;
+  right: 20px;
+  background: lightblue;
+  padding: 8px 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 22px;
+  color: black;
+}
+
+.cartIconFA:hover {
+  background: deepskyblue;
+}

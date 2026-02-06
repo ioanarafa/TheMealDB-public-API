@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>TheMealDB simplu</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  
+  <div id="cartIcon" class="cartIconFA">
+    <i class="fa-solid fa-cart-shopping"></i>
+  </div>
+
+  <div id="search-area">
+    <label>Ingredient:</label>
+    <input type="text" id="ingredient" >
+    <button id="searchBtn">Caută</button>
+    <p id =""></p>
+  </div>
+
+  <div id="loader"></div>
+  <p id="message"></p>
+  <div id="results"></div>
+
+ 
+  <div id="details">
+    <div class="card">
+      <h3 id="mealName"></h3>
+      <img id="mealImg" src="" width="200">
+      <p><b>Tara:</b> <span id="mealArea"></span></p>
+      <p><b>Categorie:</b> <span id="mealCat"></span></p>
+      <p id="mealInst"></p>
+
+      <button id="deleteBtn">Șterge</button>
+      <button id="cancelBtn">Anulează</button>
+      <button id="orderBtn">Comandă</button>
+    </div>
+  </div>
+
+
+  <div id="cart">
+    <div class="card">
+      <h3>Coșul meu</h3>
+      <div id="cartItems"></div>
+      <button id="closeCart">Închide</button>
+    </div>
+  </div>
+</body>
+</html>
