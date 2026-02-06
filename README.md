@@ -53,4 +53,3 @@ No additional setup or server is required.
 
 ---
 
-## 📂 Project Structure
